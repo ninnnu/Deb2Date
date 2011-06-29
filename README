@@ -1,0 +1,13 @@
+Deb2Date is a software for following the update-needs of several Debian-based computers over SSH. The remote computers don't have to be connected to Internet, the "report-server" (deb2date.py) fetches the right package lists and changelogs.
+Deb2Date doesn't update anything, it only fetches updated package-lists and shows changelogs for each computer.
+
+Required sligtly less common packages:
+python-debian
+python-apt
+
+Usage:
+1. Modify the "servers"-list in deb2date.py according to your needs.
+2. Make sure you can login to the servers with SSH-keys. Password is okay, too, but keys make life easier and faster.
+3. Run deb2date.py
+4. Get a cup of coffee
+5. Open report.html in your preferred web broweser.
